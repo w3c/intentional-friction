@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Spec proposal</title>
+    <title>The Challenge of Intentional Friction</title>
     <script src="https://www.w3.org/Tools/respec/respec-w3c" class="remove"></script>
     <script class='remove'>
       // See https://github.com/w3c/respec/wiki/ for how to configure ReSpec
@@ -16,6 +16,7 @@
     </script>
   </head>
   <body>
+    <h2 id="subtitle">An analysis from a gaming accessibility perspective</h2>
     <section id="abstract">
       <p>
         This specification does neat stuff.
@@ -30,9 +31,205 @@
     <section id="introduction">
       <h2>Introduction</h2>
       <p>
-        See <a href="https://github.com/w3c/respec/wiki/User's-Guide">ReSpec's user guide</a>
-        for how toget started!
+        User friction in a digital interface creates inaccessibility and accessibility guidance aims to remove this friction to make the interface easy to use for as many people as possible. Some friction, however, is fundamental to the nature of a product or service and removing it can break the system or the user experience rather than enhance it. This Note aims to find a way to identify this 'intentional friction' so that it can be preserved while the unintentional friction that creates unnecessary inaccessibility can be removed.      
       </p>
-    </section>
+      <h2>Types of Intentional friction</h2>
+      <p>
+        There are two main types of intentional friction: <a>generative friction</a> and <a>protective friction</a>. <a>Generative friction</a>Generative friction creates value whereas <a>protective friction</a> prevents harm.
+      </p>
+      <h3>Generative Friction</h3>
+      <h4>Educational Tools</h4>
+      <p>
+        Educational tools use friction to encourage learning in users. Asking questions and expecting users to remember facts or data creates a memory challenge. Timed quizzes aim to distinguish between effortful retrieval and automatic retrieval (does the user need to work out the answer each time or is the answer itself memorised). This is especially useful in mathematics where automatic retrieval of simple and common calculation answers can free up mental capacity for high-level problem solving.
+      </p>
+      <p>
+        Bjork and Bjork recommend several ways in which making testing harder can improve learning overall. Spacing out practice sessions to encourage partial forgetting, switching between types of problem, varying learning environments to remove associations between the environment and the subject that would have aided recall, and actively requiring the user to retrieve information from memory before re-presenting facts will all increase friction and make the process harder.
+      </p>
+      <p>
+        Bjork and Bjork argue that this improves the storage strength of the facts rather than the retrieval strength in the moment. The level of difficulty introduced must, however, be balanced for the user to create a constructive challenge rather than a deterrent challenge.
+      </p>
+      <h4>Video Games</h4>
+      <p>
+        One of the most widely cited definitions of games was created by Jesper Juul. Jesper's definition is based on 6 rules or elements. "A game is 1) a rule-based formal system with 2) variable and quantifiable outcome, where 3) different outcomes are assigned different values, 4) the player exerts effort in order to influence the outcome, 5) the player feels attached to the outcome, and 6) the consequences of the activity are optional and negotiable." 
+        By this definition a user experience is only a game if it is effortful and that effort influences the outcome. This requirement for effort constitutes intentional friction. 
+      </p>
+      <p>        
+        Additionally, some accessibility features in gaming can make the game accessible while removing both the effort and the ability to influence the outcome. An example is auto-aim, which automatically moves a reticule over the target that needs to be hit or selected. While this enables the player to hit or select the target, it removes the challenge of aiming, which forms part of the gameplay challenge itself.
+      </p>
+      <h3>Protective Friction</h3>
+      <h4>CAPTCHAs</h4>
+      <p>
+        CAPTCHAs (Completely Automated Public Turing test to tell Computers and Humans Apart) aim to block malicious automated access to digital resources by presenting challenges that only humans should be able to solve.
+      </p>
+      <p>
+        See the <a href="https://www.w3.org/TR/turingtest/">Inaccessibility of CAPTCHA</a> for more on this topic.
+      </p>
+      <h4>Behavioural Interventions</h4>
+      <p>
+        Some friction is designed to discourage destructive behaviours. Gambling services often incorporate deposit limits and mandatory pauses to discourage unhealthy levels of interaction. This could be considered a form of "Slow Design" which is interfaces that slow down user interations to encourage the user to interact in a more mindful way.       
+      </p>
+      <h4>Microboundaries</h4>
+      <p>        
+        Microboundaries are interactions that attempt to encourage mindful interactions. Examples are confirmation prompts ("Do you want to continue?") before allowing destructive or ireversible actions. 
+        Important and irreversible actions often require a confirmation step ("Do you want to continue?") or a cooling-off period to reduce the likelihood of harm through accidental activation or impulsive decision making. 
+      </p>
+      <p>
+        Adding friction to actions seen as harmful or undesirable is intended to discourage those behaviours.
+      </p>
+      <h4>User Identification</h4>
+      <p>
+        Identification and authentication mechanisms introduce a different kind of intentional friction. An ideal design would create an insurmountable challenge for someone who should not be accessing the resource while creating minimal friction for someone who should. 
+      </p>
+      <h2>Focus of this Note</h2>
+      <p>
+        This Note focuses on intentional friction in gaming. In the other forms of intentional friction identified it is generally clear what needs to be preserved. If an effort to make a user identification mechanism allows anyone to claim to be that user then it is clear that the mechanism is broken. Similarly the purpose of CAPTCHAS and behavioural interventions are clear and in reviewing an attempt to make them accessible most people would normally agree on whether the mechanism has been broken or not. Friction in educational tools has a large body of work behind it and the frictions involved have specific aims such as encouraging effortless recall, encouraging mindful interaction or impeding immediate recall to encourage better knowledge storage. Again, when one of these frictions is identified it is generally unambiguous whether an accessibility intervention has broken the friction or not.
+      </p>
+      <p>        
+        In gaming the intentional friction is not the means to an end but is the end itself. In 'Flow: The Psychology of Optimal Experience' Mihaly Csikszentmihalyi talks about this enjoyable 'flow' state as being a state between boredom (from too easy a challenge) and anxiety (from too hard a challenge). Gaming attempts to offer this flow state. The need to balance challenge to the player makes game accessibility a unique use case in terms of intentional friction. This Note will focus on this 'intrinsic' enjoyment from gaming that relies on balancing the challenge to the player. There are also 'extrinsic' motivations available; social status from beating games that are designed to test resiliance and perseverance (to continue to play despite the anxiety of a misaligned difficulty level), trophies that state you have beaten a meta-challenge in a game and e-sports which offer material prizes and social status (that could encourage the player to continue despite the boredom of a misaligned difficulty level).
+      </p>
+      <h2>Existing resources on intentional friction in gaming</h2>
+      <p>
+        There is a body of work that highlights the need for some friction in gaming. This means that a standard approach to accessibility of trying to remove all friction or barriers would be inappropriate. Not only would it constitute fundamental alteration of the game which may be considered an unreasonable requirement, but it could actually break the game experience itself.
+      </p>
+      <p class="note">
+        The existing resources section is currently a direct drag and drop from the GAP analysis. This will be [trimmed | expanded | rewritten] at some point.
+      </p>
+         <h3>The perception of difficulty</h3>
+         <p>
+           Ian Hamilton's <a href "https://youtube.com/watch?v=sPehhHZvKE8&feature=youtu.be">Difficulty vs Accessibility talk</a> at GAConf USA 2021 highlighted that there is no fixed difficulty for a game. Games present barriers and players have capabilities and the level of difficulty that arises comes from trying to overcome the given barriers with a user's unique set of capabilities. Disabled people will have reduced capabilities in some respect meaning they will face higher difficulty for the same set of presented barriers. Within the talk he states that "Accessibility = avoiding unnecessary mismatch between capability & barrier". Steve Saylor framed this to say that accessibility is a way to <a href="https://kotaku.com/accessibility-difficulty-easy-mode-explained-1851261475">bring the difficulty back towards the intended level.</a>
+         </p>
+         <h3>The need to preserve inaccessibility</h3>
+         <p>
+           In the <a href="https://igda-gasig.org/how/">IGDA-GASIG page on how to make games accessible</a> it states: "All games must contain some degree of inaccessibility in order to be a game. There must be some kind of challenge. This necessary inaccessibility varies from game to game. It makes accessibility an optimisation process - thinking about the barriers your game may present, which of those are a necessary part of what makes it fun, and which are not."
+         </p>
+         <h3>Game Accessibility Paradox</h3>
+         <p>
+          In the article <a href="https://www.frontiersin.org/journals/computer-science/articles/10.3389/fcomp.2024.1182541/full">Game accessibility course design modules in higher education</a> Thomas Westin describes this as the Game Accessibility Paradox. The author argues that games can be described by a series of strict rules for playing the game which are normative. They can't be changed without fundamentally altering the game and effectively creating a new, different, game. The player interacts with these through game mechanics which are performative. They conclude that the two main approaches for accessibility are removing barriers that aren't needed for core gameplay or creating special games that use a different modality (such as audiogames). They note that a third option is to make modifications that alter the game rules creating a new game.
+         </p>
+         <p>
+          These examples highlight the need to retain some inaccessible features to preserve the challenge of a game but make no recommendation of a formal process to identify which features need retaining.
+         </p>
+         <h2>Remedies for inaccessibility</h2>
+         <p>
+            [intro to remedies paragraph]
+         </p>
+         <h3>Challenge manipulation</h3>
+         <p>
+            Westin offers us three ways to make an accessible game.
+            <ol>
+               <li>Make adjustments that preserve the challenge</li>
+               <li>Make adjustments that alter the challenge,</li>
+               <li>Create a bespoke game for a target audience,</li>
+            </ol>
+
+            Since the game is defined by the core challenge only the first of these provides accessibility to the original game. There is a fourth option:
+
+            <ol start="4">
+               <li>Make adjustments that remove the challenge,</li>
+            </ol>
+            This may be acceptable where a game has multiple challenges and removing this one still leaves enough challenges to keep players interested. It will, however, diminish the value of the product as a game. 
+
+          </p>
+          <h3>Difficulty calibration</h3>
+          <p>
+             Hamilton, however, makes an important point in that the difficulty level of a challenge is not universal. It is affected by the barriers that a user has which may be caused by disabilities. It will also be affected by familiarity with the game itself and familiarity with the game mechanics used. 
+          </p>             
+          <p>
+             This suggests two things:
+            <ol>
+              <li>difficulty settings and gradients may enable players to find their own difficulty threshold or adjust the difficulty to suit them,</li>
+              <li>The difficulty level of a particular challenge mechanism may be reduced with practice,</li>
+            </ol>
+          </p>
+          <p>
+             While these will not prevent inaccessibility from increasing the difficulty of a game they may allow it to be rebalanced to a suitable level.
+          </p>
+          <p class="note">Many games have to balance challenge as the user gets used to the game mechanics. They may do this by making particular game loops harder with tougher enemies and higher skill requirements or by subverting the game loop with new weapons and abilities that need to be learned. There may also be recurring short periods of higher <a>designed challenge</a> that may enter the anxiety level of challenge and provide a sense of acheivement when the player beats them even if it takes several attempts (so-called 'boss fights' or 'boss monsters'). These are adjustments to the <a>designed challenge</a> that will affect everybody and are not neccessarily accessibility issues (except where a new weapon or skill introduces new unintentional frictions).
+          </p>          
+          <h4>Difficulty gradients</h4>
+          <p>
+             There are some games that adjust the difficulty of the challenge depending on the skill of the user. They may do this by: 
+             <ol>
+              <li>matching players in multiplayer games who are judged to have a similar skill level (or similar ranks in a leaderboard),</li>
+              <li>by adjusting the speed, target size or complexity of the challenge mechanism to balance its designed difficulty based on a player's measured ability, this is known as Dynamic Difficulty Adjustment (DDA),</li>
+              <li>by adjusting the speed, target size or complexity of the challenge mechanism based on selectable difficulty levels.</li>
+             </ol>
+             These may enable a player to find the optimal experience. 
+          </p>
+          <h3>Available accessibility remedies</h3>
+          <p>
+             Once we have identified a challenge mechanism that creates inaccessibility we have a series of actions that we may be able to perform.
+            <ol>
+              <li>Make accessibility related adjustments that preserve the core challenge,</li>
+              <li>Make accessibility related adjustments that remove the core challenge,</li>
+              <li>Make accessibility related adjustments that replace the core challenge with another challenge,</li>
+              <li>Where the inaccessibility increases the difficulty instead of making the challenge unplayable the <a>designed challenge</a> of the mechanism can be automatically reduced to rebalance the <a>experienced difficulty</a>,</li>
+              <li>Where the inaccessibility increases the difficulty instead of making the challenge unplayable different difficulty options can be offered to rebalance the <a>experienced difficulty</a>,</li>              
+              <li>Where the <a>experienced difficulty</a> is a gradient users may naturally find a suitable level on their own.</li>
+            </ol>
+          </p>
+          <h3>When inaccessibility prevents play</h3>
+          <p>
+             A common way in which inaccessibility prevents play is in communication barriers. This could be information that is presented audibly, visually, via colour or via written language. <-expand this 
+            
+            Transcoding vs 
+
+          </p>
+          <h4>Multichannel communication</h4>
+          <p>
+            ie. multichannel information
+          </p>
+          <h4>Alternative presentations</h4>
+          <p>
+            ie. localisation - alternative languages, screenreaders 
+          </p>
+          <h4>Channel dependent information</h4>
+          <p>
+            ie. signal from noise puzzles, channel dependent patterns (name that tune, charades)
+            In some cases the challenge is to discern meaning from patterns in the communication channel. Examples of this would be: 
+            <ul>
+              <li>hidden object games where the player needs to visually search and find smaller pictures within a larger visually cluttered image</li>
+              <li>identifying a piece of music from the audio</li>
+              <li>charades</li>
+              <li>reading an alien text using a visual key</li>
+            </ul>
+            In these instances the core challenge is intrinsicly linked to the communication channel used. Trying to visualise the audio or sonify the image or video before extracting the meaning from it creates patterns that will not make sense in the new communication channel. Extracting the meaning and then communicating that while visualising or sonifying the communication channel removes the challenge.
+            </p>
+            <p> 
+            We can't make accessibility related adjustments that preserve the core challenge so we must either remove the challenge or replace it with another challenge. 
+          </p>
+          <h3>When inaccessibility hinders play</h3>
+          <p>
+            <ul>
+              <li>Reduced manual dexterity</li>
+              <li>Reaction speed</li>
+              <li>Short term memory loss  (??) </li>
+              <li>Cognitive processing disorders</li>
+            </ul>
+          </p>
+          <h3>When inaccessibility deters play</h3>
+          <p>
+             Phobias or aversions to specific subjects or objects can create a deterrant to gamers.  
+          </p>
+
+
+          <section id="glossary">
+    <h2>Glossary</h2>
+  <dl>
+    <dt><dfn>designed challenge</dfn></dt>
+      <dd>A level of difficulty intended by the game designer. See <a>experienced difficulty</a></dd>
+    <dt><dfn>experienced difficulty</dfn></dt>
+      <dd>The level of difficulty experienced by the user as a result of the interaction between the barriers faced and the user's capabilities.</dd>
+    <dt><dfn>flow</dfn></dt>
+      <dd>The flow state is the optimal experince between the boredom of too little challenge and the anxiety of too much challenge.</dd>
+    <dt><dfn>generative friction</dfn></dt>
+      <dd>Intentional friction that creates a positive user experience. See also <a>protective friction</a></dd>
+    <dt><dfn>protective friction</dfn></dt>
+      <dd>Intentional friction that avoids a negative user experience. See also <a>generative friction</a></dd>
+
+
+
+
+        </section>
   </body>
 </html>
