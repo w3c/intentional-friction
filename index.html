@@ -16,7 +16,7 @@
     </script>
   </head>
   <body>
-    <h2 id="subtitle">An analysis from a gaming accessibility perspective</h2>
+    <h2 id="subtitle">An analysis from a games accessibility perspective</h2>
     <section id="abstract">
       <p>
         This specification does neat stuff.
@@ -32,6 +32,9 @@
       <h2>Introduction</h2>
       <p>
         User friction in a digital interface creates inaccessibility and accessibility guidance aims to remove this friction to make the interface easy to use for as many people as possible. Some friction, however, is fundamental to the nature of a product or service and removing it can break the system or the user experience rather than enhance it. This Note aims to find a way to identify this 'intentional friction' so that it can be preserved while the unintentional friction that creates unnecessary inaccessibility can be removed.      
+      </p>
+      <p class="note">
+        <b>To Do:</b> It is worth checking the terminology used here fits that used in "Patterns in Game Design" by STAFFAN BJÖRK and JUSSI HOLOPAINEN or any newer similar reference where applicable. This should ensure that standard terms are understood by the industry. Also need to ensure everything is centred on a lens of intentional or unintentional friction and not straying into generic accessibility advice.
       </p>
       <h2>Types of Intentional friction</h2>
       <p>
@@ -173,24 +176,22 @@
           </p>
           <h3>When intentional friction prevents play</h3>
           <p>
-             A common way in which inaccessibility prevents play is in communication barriers. This could be information that is presented audibly, visually, via colour or via written language. <-expand this 
+            In a game there is information linked to challenges that needs to be presented to the player. This may entail communicating a game event, confirming a player action or presenting information that gives the player choice (for instance, information about the enemies that can be attacked, the cards that can be turned or information that enables the player to solve a puzzle). Unintentional friction can arise from the way the information is encoded (a language the player doesn't understand), the way it is presented (if only communicated visually, audibly or through use of colour etc) or a requirement for the player to discover it. 
           </p>
+          <p class="note">
+            Are there any unintentional frictions that prevent (rather than hinder) play not related to sensory disabilities? Should memory games be included in this category or should they always be assumed to hinder play?
+          </p>
+          <h4>Barriers from information encoding</h4>
           <p>
-            In some cases information is carried by the channel of communication and can easily be carried by an additional or alternative  channel. For instance the value of the ace of spades playing card is carried by the visual design of the playing card but can also be written using the text "Ace of Spades", or the characters "A<span>&spades;</span>", spoken using the words "Ace of Spades" or represented in different languages including sign languages. 
-          </p>
+            Where the information being communicated 
+            ie. localisation - alternative languages, screenreaders [the format (syntax?) of the information being communicated is the barrier]
+          </p>          
+          <h4>Barriers from information presentation</h4>
           <p>
-            In some cases the challenge is to extract the <a>signal</a> information from the <a>noise</a> and we refer to these cases as "channel dependent information".   [<- although better terminology is welcome]
+            Audio cues and information presented visually in games can often be presented both visually and audibly. Where the visual or the audible information is communicating a game event, confirming a player action or presenting information that presents options to the user (giving the user a choice of card to turn or enemy to attack along with details about that enemy that underpin player strategy)
+            then this can be done both visually and audibly. This constitutes an accessibility related adjustment that preserves the core challenge. [accessibility to the information presented is the barrier]
           </p>
-          <h4>Multichannel communication</h4>
-          <p>
-            ie. multichannel information
-            Audio cues and information presented visually in games can often be presented both visually and audibly.   
-          </p>
-          <h4>Alternative presentations</h4>
-          <p>
-            ie. localisation - alternative languages, screenreaders 
-          </p>
-          <h4>Channel dependent information</h4>
+          <h4>Barriers from information discovery</h4>
           <p>
             In some cases the challenge is to discern meaning from patterns in the communication channel. Examples of this would be: 
             <ul>
@@ -243,7 +244,7 @@
             </p>
             <h5>Other types of Juice</h5>
             <p>
-              <a>Juice</a> is intended to improve the feel of the game and although it should always agree with the aesthetic and standard communication (<a>juice</a> may be superfluous to the game feedback but should never be at odds with it) any extra communication can increase the cognitive load on players. It can also bury audio and visual cues that inform the player in the juicy feedback that was intended to enhance the experience. 
+              <a>Juice</a> is intended to improve the feel of the game and although it should always agree with the aesthetic and standard communication (<a>juice</a> may be superfluous to the game feedback but should never be at odds with it) any extra communication can increase the cognitive load on players. It can also bury audio and visual cues that communicate information to the player in the juicy feedback that was intended to enhance the experience. 
             </p>
             <p>
             <a>Juice</a> is designed to be superflous so it is intentional friction that can be safely removed when needed without breaking the challenge of the game. By offering options to turn off specific features with appropriate levels of granularity an accomodation can be made without breaking gameplay or making the game less engaging for others.
