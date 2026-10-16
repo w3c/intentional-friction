@@ -19,7 +19,7 @@
     <h2 id="subtitle">An analysis from a games accessibility perspective</h2>
     <section id="abstract">
       <p>
-        This specification does neat stuff.
+        This Note attempts to address the conflict between removing friction to improve accessibility and retaining friction which is performing some role in an interface. There are circumstances in which removing a type of friction will diminish an interface and this Note recognises 6 actions that can be taken. It then offers advice on which ones should be used for particular cases. 
       </p>
     </section>
     <section id="sotd">
@@ -33,7 +33,7 @@
       <p>
         User friction in a digital interface creates inaccessibility and accessibility guidance aims to remove this friction to make the interface easy to use for as many people as possible. Some friction, however, is fundamental to the nature of a product or service and removing it can break the system or the user experience rather than enhance it. This Note aims to find a way to identify this 'intentional friction' so that it can be preserved while the unintentional friction that creates unnecessary inaccessibility can be removed.      
       </p>
-      <p class="note">
+      <p class="issue">
         <b>To Do:</b> It is worth checking the terminology used here fits that used in "Patterns in Game Design" by STAFFAN BJÖRK and JUSSI HOLOPAINEN or any newer similar reference where applicable. This should ensure that standard terms are understood by the industry. Also need to ensure everything is centred on a lens of intentional or unintentional friction and not straying into generic accessibility advice.
       </p>
       <h2>Types of Intentional friction</h2>
@@ -88,16 +88,17 @@
         This Note focuses on intentional friction in gaming. In the other forms of intentional friction identified it is generally clear what needs to be preserved. If an effort to make a user identification mechanism allows anyone to claim to be that user then it is clear that the mechanism is broken. Similarly the purpose of CAPTCHAS and behavioural interventions are clear and in reviewing an attempt to make them accessible most people would normally agree on whether the mechanism has been broken or not. Friction in educational tools has a large body of work behind it and the frictions involved have specific aims such as encouraging effortless recall, encouraging mindful interaction or impeding immediate recall to encourage better knowledge storage. Again, when one of these frictions is identified it is generally unambiguous whether an accessibility intervention has broken the friction or not.
       </p>
       <p>        
-        In gaming the intentional friction is not the means to an end but is the end itself. In 'Flow: The Psychology of Optimal Experience' Mihaly Csikszentmihalyi talks about this enjoyable 'flow' state as being a state between boredom (from too easy a challenge) and anxiety (from too hard a challenge). Gaming attempts to offer this flow state. The need to balance challenge to the player makes game accessibility a unique use case in terms of intentional friction. This Note will focus on this 'intrinsic' enjoyment from gaming that relies on balancing the challenge to the player. There are also 'extrinsic' motivations available; social status from beating games that are designed to test resiliance and perseverance (to continue to play despite the anxiety of a misaligned difficulty level), trophies that state you have beaten a meta-challenge in a game and e-sports which offer material prizes and social status (that could encourage the player to continue despite the boredom of a misaligned difficulty level).
+        In gaming the intentional friction is not the means to an end but is the end itself. In 'Flow: The Psychology of Optimal Experience' Mihaly Csikszentmihalyi talks about this enjoyable 'flow' state as being a state between boredom (from too easy a challenge) and anxiety (from too hard a challenge). Gaming attempts to offer this flow state. We will refer to too little challenge as the <a>boredom zone</a>
+        and too much challenge as the <a>anxiety zone</a> with the <a>flow zone</a> in the middle. The need to balance challenge to the player makes game accessibility a unique use case in terms of intentional friction. This Note will focus on this 'intrinsic' enjoyment from gaming that relies on balancing the challenge to the player. There are also 'extrinsic' motivations available; social status from beating games that are designed to test resiliance and perseverance (to continue to play despite the anxiety of a misaligned difficulty level), trophies that state you have beaten a meta-challenge in a game and e-sports which offer material prizes and social status (that could encourage the player to continue despite the boredom of a misaligned difficulty level).
       </p>
       <p class="note">
-        Although the body of the document is going to focus on gaming it could easily address how to deal with protective friction (of the 6 options we identify later we must preserve the challenge if possible or replace it if not). Similarly, generative friction linked to education should be preserved, replaced or rebalanced. Once the cognitive work has been done for gaming it may be quick and easy to apply it to the other spheres.
+        Although the body of the document is going to focus on gaming it could easily address how to deal with protective friction (of the 6 options we identify later we must preserve the challenge if possible or replace it with a friction that acheives the same effect if not). Similarly, generative friction linked to education should be preserved, replaced or rebalanced. Once the cognitive work has been done for gaming it may be quick and easy to apply it to the other spheres.
       </p>
       <h2>Existing resources on intentional friction in gaming</h2>
       <p>
         There is a body of work that highlights the need for some friction in gaming. This means that a standard approach to accessibility of trying to remove all friction or barriers would be inappropriate. Not only would it constitute fundamental alteration of the game which may be considered an unreasonable requirement, but it could actually break the game experience itself.
       </p>
-      <p class="note">
+      <p class="issue">
         The existing resources section is currently a direct drag and drop from the GAP analysis. This will be [trimmed | expanded | rewritten] at some point.
       </p>
          <h3>The perception of difficulty</h3>
@@ -115,9 +116,9 @@
          <p>
           These examples highlight the need to retain some inaccessible features to preserve the challenge of a game but make no recommendation of a formal process to identify which features need retaining.
          </p>
-         <h2>Remedies for inaccessibility</h2>
+         <h2>Remedies for conflicts between accessibility and intentional friction</h2>
          <p>
-            [intro to remedies paragraph]
+            Once intentional friction has been identified we need options on how to act.
          </p>
          <h3>Challenge manipulation</h3>
          <p>
@@ -150,14 +151,14 @@
           <p>
              While these will not prevent inaccessibility from increasing the difficulty of a game they may allow it to be rebalanced to a suitable level.
           </p>
-          <p class="note">Many games have to balance challenge as the user gets used to the game mechanics. They may do this by making particular game loops harder with tougher enemies and higher skill requirements or by subverting the game loop with new weapons and abilities that need to be learned. There may also be recurring short periods of higher <a>designed challenge</a> that may enter the anxiety level of challenge and provide a sense of acheivement when the player beats them even if it takes several attempts (so-called 'boss fights' or 'boss monsters'). These are adjustments to the <a>designed challenge</a> that will affect everybody and are not neccessarily accessibility issues (except where a new weapon or skill introduces new unintentional frictions).
+          <p class="note">Many games have to balance challenge as the user gets used to the game mechanics. They may do this by making particular game loops harder with tougher enemies and higher skill requirements or by subverting the game loop with new weapons and abilities that need to be learned. There may also be recurring short periods of higher <a>designed challenge</a> that may enter the anxiety level of challenge and provide a sense of acheivement when the player beats them even if it takes several attempts (so-called 'boss fights' or 'boss monsters'). These are adjustments to the <a>designed challenge</a> that will affect everybody and in many cases will not create accessibility issues (except where a new weapon or skill introduces new unintentional frictions). The exceptions are where a players capabilities hinder them from learning or remembering new or modified gameloops and mechanics. Puzzle games also commonly have increasing difficulty levels so These may enable players to find their optimal challenge level. 
           </p>          
-          <h4>Difficulty gradients</h4>
+          <h4>Difficulty levels</h4>
           <p>
              There are some games that adjust the difficulty of the challenge depending on the skill of the user. They may do this by: 
              <ol>
               <li>matching players in multiplayer games who are judged to have a similar skill level (or similar ranks in a leaderboard),</li>
-              <li>by adjusting the speed, target size or complexity of the challenge mechanism to balance its designed difficulty based on a player's measured ability, this is known as Dynamic Difficulty Adjustment (DDA),</li>
+              <li>by adjusting the speed, target size or complexity of the challenge mechanism to balance its designed difficulty based on a player's measured ability, this is known as Dynamic Difficulty Adjustment (<a>DDA</a>),</li>
               <li>by adjusting the speed, target size or complexity of the challenge mechanism based on selectable difficulty levels.</li>
              </ol>
              These may enable a player to find the optimal experience. 
@@ -169,17 +170,24 @@
               <li>Make accessibility related adjustments that preserve the core challenge,</li>
               <li>Make accessibility related adjustments that remove the core challenge,</li>
               <li>Make accessibility related adjustments that replace the core challenge with another challenge,</li>
-              <li>Where the inaccessibility increases the difficulty instead of making the challenge unplayable the <a>designed challenge</a> of the mechanism can be automatically reduced to rebalance the <a>experienced difficulty</a>,</li>
+              <li>Where the inaccessibility increases the difficulty instead of making the challenge unplayable the <a>designed challenge</a> of the mechanism can be automatically adjusted to rebalance the <a>experienced difficulty</a>,</li>
               <li>Where the inaccessibility increases the difficulty instead of making the challenge unplayable different difficulty options can be offered to rebalance the <a>experienced difficulty</a>,</li>              
               <li>Where the <a>experienced difficulty</a> is a gradient users may naturally find a suitable level on their own.</li>
             </ol>
+          </p>
+          <h2>Selecting the appropriate remedy</h2>
+          <p>
+            With a selection of potential remedies available a developer needs to know which one to use in which circumstance.
           </p>
           <h3>When intentional friction prevents play</h3>
           <p>
             In a game there is information linked to challenges that needs to be presented to the player. This may entail communicating a game event, confirming a player action or presenting information that gives the player choice (for instance, information about the enemies that can be attacked, the cards that can be turned or information that enables the player to solve a puzzle). Unintentional friction can arise from the way the information is encoded (a language the player doesn't understand), the way it is presented (if only communicated visually, audibly or through use of colour etc) or a requirement for the player to discover it. 
           </p>
+          <p>
+            A requirement to learn and remember new game mechanics can also prevent play for players with short term memory loss or reduced information processing capability. Whilst the <a>designed challenge</a> is intentionally increased the additional difficulty arising from cognitive disability is not intentional and does not need to be preserved.
+          </p>
           <p class="note">
-            Are there any unintentional frictions that prevent (rather than hinder) play not related to sensory disabilities? Should memory games be included in this category or should they always be assumed to hinder play?
+            Unintended friction can also arise from assumed knowledge such as local customs which are not known to people foreign to that area or figures of speech which may be hard to understand for some neurodiverse people. These are not part of an intended challenge and so this friction does not need to be preserved. 
           </p>
           <h4>Barriers from information encoding</h4>
           <p>
@@ -206,25 +214,61 @@
               <li>reading an alien text using a visual key</li>
               <li>Any challenge asscociated with discerning between <a>signal</a> and <a>noise</a>.</li>
             </ul>
-            In these instances the core challenge is intrinsicly linked to the communication channel used. Trying to visualise the audio or sonify the image or video before extracting the meaning from it creates patterns that will not make sense in the new communication channel. Extracting the meaning and then communicating that while visualising or sonifying the communication channel removes the challenge.
+            In these instances the core challenge is intrinsicly linked to the communication channel used. Trying to visualise the audio or sonify the image or video before extracting the meaning from it creates patterns that will not make sense in the new communication channel. Extracting the meaning and then communicating that while visualising or sonifying the communication channel removes the challenge. It may be possible to extract the meaning, visualise or sonify the rest of the information and then re-obscure the meaning in order to reintroduce the challenge. This would create a new challenge and would require the difficulty level to be rebalanced for the new communication channel.
             </p>
             <p> 
             We can't make accessibility related adjustments that preserve the core challenge so we must either remove the challenge or replace it with another challenge. 
           </p>
+          <p class="note">
+            Neurodiverse players may struggle to recognise expressions or emotions from text, speech or graphics but if this is not part of the intended challenge then it doesn't constitute intentional friction and this friction should not be preserved.
+          </p>
           <h3>When intentional friction hinders play</h3>
           <p>
+            The <a>experienced difficulty</a> for a player is generated by the interaction of their capabilities against the <a>designed challenge</a>. Where the player has reduced capabilities due to a disability this can mean their <a>experienced difficulty</a> is much higher taking them into the <a>anxiety zone</a>. 
+            </p>
+            <p>
+              This may be caused by:
             <ul>
               <li>Reduced manual dexterity</li>
-              <li>Reaction speed</li>
-              <li>Short term memory loss  (??) </li>
-              <li>Cognitive processing disorders</li>
+              <li>Reduced reaction speed</li>
+              <li>Memory loss</li>
+              <li>Reduced organisational skills</li>
+              <li>Reduced information processing</li>
+              <li>Reduced Problem solving and decision making</li>
             </ul>
+            <h4>Targeted accessibility features</h4>
+            <p>
+              Some accessibility features such as button remapping, quest reminders, sticky keys etc will be targeted at specific capability mismatches and will make the game playable to the target audience. Although the game will now be playable that doesn't neccessarily mean the <a>experienced difficulty</a> now sits in the <a>flow zone</a> however so the challenge may still need to be rebalanced. 
+            </p>
+            <h4>Skill-based matchmaking</h4>
+            <p>
+              In Player vs Player (<a>PvP</a>) games players can be ranked based on the skills they demonstrate or how many games they win. They can then be pitched against other players with a similar ranking. This is a good way to enable players to find their <a>flow zone</a> regardless of any reduced capabilities or disabilities they may have.
+            </p>
+            <h4>Dynamic Difficulty Adjustment (DDA)</h4>
+            <p>
+              Dynamic Difficulty Adjustment (<a>DDA</a>) refers to automated processes that adjust the <a>designed challenge</a> based on the players performance or emotions. 
+            </p>
+            <h5>Performance based DDA</h5>
+            <p>
+              Performance based DDA judges how well a player is performing based on metrics such as accuracy in hitting a target, how much damage their characters are taking etc. It can then reduced the <a>designed challenge</a> by making enemies easier to beat, controlling the number of enemies that are attacking or providing better powerups (for instance more ammo, better weapons, health potions etc). This can aim to enforce a set 'failure rate' by increasing the difficulty until the player finds it chalenging to win.
+            </p>
+            <h5>Emotion based DDA</h5>
+            <p>
+              Emotion based DDA tries to judge a players emotions usually based on biometric markers such as heart rate, heart rate variability (<a>HRV</a>) or breath patterns to infer the amount of stress the player is under. The game can then adapt the experience to try to acheive the desired balance. 
+            </p>
+            <h4>Difficulty options</h4>
+            <p>
+              One of the common ways to enable players to find their <a>flow zone</a> is to provide difficulty options. This not only accounts for adjustments due to capabilities but also allows players to focus on secondary aspects of the game such as storyline, audio and visuals. These are described as secondary in this context due to the focus on gaming as providing challenge. Difficulty options may be set per game session but players could also be allowed to readjust the settings at will within a play session. This allows for the difficulty level to be reduced for periods of higher <a>designed challenge</a> such as boss fights if the player struggles with the <a>experienced difficulty</a> in these sections. 
+            </p>
           </p>
           <h3>When intentional friction deters play</h3>
           <p>
-
-            [ need an intro paragraph here ]
-
+            In flow theory too much friction is said to cause anxiety but anxiety can come from other areas especially in game genres such as horror or action games. Phobias or trauma may magnify this narrative friction beyond the intended levels. Trigger warnings and menu options to remove or obscure these themes can avoid or reduce this unintended additional anxiety and developers can decide whether there is then a need to rebalance the <a>designed challenge</a> based on whether the narrative friction is intented to contribute to it.  
+          </p>
+          <p class="issue">
+            I intend to remove the section on "When Intentional Friction deters play" because while there is a lot of friction that deters play I'm not sure any of it is 'intentional'. The scope of this Note is to explore the conflict between smoothing out friction and retaining challenge so any inaccessibility arising from unintentional friction is out of scope. There may be an argument for phobias or trauma creating an unbalanced 'narrative friction' in horror content (see above) but is this in scope?  
+          </p>
+          <p>
             <ol>
              <li>Players with Post traumatic Stress Disorder (<a>PTSD</a>)</li>
              <li>Players with Autistic Spectrum Disorder (<a>ASD</a>)</li>
@@ -233,7 +277,7 @@
           </p>
           <h4>Juicy Design</h4>
              <p>
-             <a>Juicy design</a> can be seen as a type of intentional friction because it sometimes complicate the communication between the interface and the player. <a>Juice</a> encompasses: 
+             <a>Juicy design</a> can be seen as a type of friction because it sometimes complicate the communication between the interface and the player. <a>Juice</a> encompasses: 
               <ol>
                 <li>excessive visual and audio feedback on game events and player actions, goals and subgoals</li>
                 <li>animations and audio designed to mimic real-world effects (eg. camera shake when running, whiteout from explosions)</li>
@@ -256,42 +300,44 @@
             </p>
 
 
-<p class="note">
-  Conditions to consider 
-  <ul>
-    <li>Memory loss    </li>
-    <li>Reduced organisational skills</li>
-    <li>Reduced information processing</li>
-    <li>Reduced Problem solving and decision making</li>
-    <li>Attention deficit</li>
-    <li>Neurodiversity - info presentation</li>
-  </ul>
-</p>
-
-
           <section id="glossary">
     <h2>Glossary</h2>
   <dl>
+    <dt><dfn>Anxiety Zone</dfn></dt>
+    <dd>When the experienced difficulty of a game is too high causing anxiety or frustration.</dd>
     <dt><dfn>ASD</dfn></dt>
     <dd>Autistic Spectrum Disorder is a lifelong neurodevelopmental condition that affects how a person thinks, communicates, behaves, and interacts with the world.</dd>
+    <dt><dfn>Boredom zone</dfn></dt>
+    <dd>When the experienced difficulty of a game is too low causing the player to get bored.</dd>
+    <dt><dfn>DDA</dfn></dt>
+    <dd></dd>
     <dt><dfn>Designed challenge</dfn></dt>
       <dd>A level of difficulty intended by the game designer. See <a>experienced difficulty</a>.</dd>
     <dt><dfn>Experienced difficulty</dfn></dt>
       <dd>The level of difficulty experienced by the user as a result of the interaction between the barriers faced and the user's capabilities.</dd>
     <dt><dfn>Flow</dfn></dt>
-      <dd>The flow state is the optimal experince between the boredom of too little challenge and the anxiety of too much challenge.</dd>
+      <dd>A flow state is a state of heightened engagement. [<b>To do: find a better definition</b>]</dd>
+      <dt><dfn>Flow zone</dfn></dt>
+      <dd>The flow zone is the optimal experince between the boredom of too little challenge and the anxiety of too much challenge.</dd>
     <dt><dfn>Generative friction</dfn></dt>
       <dd>Intentional friction that creates a positive user experience. See also <a>protective friction</a></dd>
+      <dt><dfn>HRV</dfn></dt>
+      <dd>Heart Rate Varience is a measure of the small amount of varience in a persons heart rate that can be used as an indicator of their stress levels.</dd>
      <dt><dfn>Juice</dfn></dt>
       <dd>Juice refers to audiovisual content (often animations and sound efects) that is unneccessary to be able to play the game but make the game more engaging to players. It is a wide and often loosely defined category that can range from elements that enhance realism to elements that convey a cartoonish or hyperstimulating effect.</dd>
       <dt><dfn>Juicy design</dfn></dt>
       <dd>Juicy design describes design decisions that contribute the the games <a>juice</a>.</dd>
       <dt><dfn>Noise</dfn></dt>
 <dd>Part of a representation that doesn't carry meaning in the desired context. See <a>signal</a>.</a></dd>
+<dt><dfn>Print disabled</dfn></dt>
+<dd>Any disabilities such as sight loss and dyslexia that prevent or hinder someone from reading written text.</dd>
 <dt><dfn>PTSD</dfn></dt>
 <dd>Post Traumatic Stress Disorder is a disorder where a person has had a traumatic experience and things that remind them of this experience can trigger anxiety and flashbacks. It is often associated with warzones but can be linked to any sufficiently traumatic experience.</dd>
     <dt><dfn>Protective friction</dfn></dt>
       <dd>Intentional friction that avoids a negative user experience. See also <a>generative friction</a></dd>
+      <dt><dfn>PvP</dfn></dt>
+      <dd>PvP stands for player vs player. A game mode where the players pits their skills against other players in the game instead of against the computer or predesigned challenges.</dd>
+
      <dt><dfn>Signal</dfn></dt>
 <dd>Part of a representation that carries meaning in the desired context. See <a>noise</a>.</a></dd>
 
